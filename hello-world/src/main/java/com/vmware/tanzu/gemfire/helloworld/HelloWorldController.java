@@ -16,12 +16,8 @@ public class HelloWorldController {
     @Autowired
     HelloWorldService helloWorldService;
 
-//    @RequestMapping(value="/", produces = "text/html")
     @RequestMapping(value="/hello", produces = "text/html")
-//    public String getHelloValue() {
     public String getHelloValue(@RequestParam(value = "key", defaultValue = "hello") String key) {
-
-//        String key = "hello";
 
         long timeBeforeQuery = System.currentTimeMillis();
 

@@ -16,7 +16,7 @@ import java.time.ZoneId;
 public class HelloWorldService {
 
 
-    @Cacheable("Andrew")
+    @Cacheable("Region1")
     public String getHelloValue(String key) {
         simulateSlowDataStore();
 
