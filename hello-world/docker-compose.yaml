@@ -1,0 +1,14 @@
+version: '3.5'
+name: hello-world-cluster
+services:
+  hello-world:
+    image: hello-world:0.0.1-SNAPSHOT
+    container_name: hello-world
+    ports:
+      - "8089:8080"
+    expose:
+      - 8080
+    networks: [gemfire-cluster_gemfire-cluster-networks]
+networks:
+  gemfire-cluster_gemfire-cluster-networks:
+    external: true

@@ -7,6 +7,7 @@ package com.vmware.tanzu.gemfire.helloworld;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,10 +16,12 @@ public class HelloWorldController {
     @Autowired
     HelloWorldService helloWorldService;
 
-    @RequestMapping(value="/", produces = "text/html")
-    public String getHelloValue() {
+//    @RequestMapping(value="/", produces = "text/html")
+    @RequestMapping(value="/hello", produces = "text/html")
+//    public String getHelloValue() {
+    public String getHelloValue(@RequestParam(value = "key", defaultValue = "hello") String key) {
 
-        String key = "hello";
+//        String key = "hello";
 
         long timeBeforeQuery = System.currentTimeMillis();
 
