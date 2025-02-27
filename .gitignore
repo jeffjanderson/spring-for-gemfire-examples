@@ -2,3 +2,5 @@
 .DS_Store
 .idea
 **/.gradle/*
+hello-world/build.gradle
+hello-world/gradle.properties
