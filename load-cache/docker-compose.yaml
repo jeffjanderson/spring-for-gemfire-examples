@@ -1,0 +1,22 @@
+version: '3.5'
+name: load-cache-cluster
+services:
+  hello-world:
+    image: load-cache:0.0.1-SNAPSHOT
+    container_name: load-cache
+    environment:
+      - JAVA_OPTS=-Xmx80m -XX:MaxDirectMemorySize=32m -XX:MaxMetaspaceSize=64m -XX:ReservedCodeCacheSize=80m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
+    ports:
+      - "8097:8080"
+    expose:
+      - 8080
+    networks: [gemfire-cluster_gemfire-cluster-networks]
+networks:
+  gemfire-cluster_gemfire-cluster-networks:
+    external: true
