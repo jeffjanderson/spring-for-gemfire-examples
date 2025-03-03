@@ -15,11 +15,11 @@ import org.springframework.context.annotation.Bean;
 @EnableGemfireRepositories(basePackages = "com.vmware.tanzu.gemfire.helloworld")
 public class GemFireConfig {
 
-    @Bean("Region1")
+    @Bean("Hello")
     public ClientRegionFactoryBean<String, String> helloRegion(ClientCacheFactoryBean gemfireCache) throws Exception {
         ClientRegionFactoryBean<String, String> region = new ClientRegionFactoryBean<>();
         region.setCache(gemfireCache.getObject());
-        region.setName("Region1");
+        region.setName("Hello");
         region.setShortcut(ClientRegionShortcut.PROXY);
         region.setPoolName("gemfirePool");
         return region;

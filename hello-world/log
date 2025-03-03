@@ -1,0 +1,535 @@
+Attaching to hello-world
+hello-world  | Calculating JVM memory based on 2253544K available memory
+hello-world  | For more information on this calculation, see https://paketo.io/docs/reference/java-reference/#memory-calculator
+hello-world  | Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx1584288K -XX:MaxMetaspaceSize=157255K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 2253544K, Thread Count: 250, Loaded Class Count: 25350, Headroom: 0%)
+hello-world  | Enabling Java Native Memory Tracking
+hello-world  | Adding 146 container CA certificates to JVM truststore
+hello-world  | Spring Cloud Bindings Enabled
+hello-world  | 
+hello-world  |   .   ____          _            __ _ _
+hello-world  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+hello-world  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+hello-world  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+hello-world  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+hello-world  |  =========|_|==============|___/=/_/_/_/
+hello-world  | 
+hello-world  |  :: Spring Boot ::                (v3.4.2)
+hello-world  | 
+hello-world  | 2025-02-27T21:35:29.061Z  INFO 1 --- [           main] c.v.t.g.h.HelloWorldApplication          : Starting HelloWorldApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+hello-world  | 2025-02-27T21:35:29.069Z  INFO 1 --- [           main] c.v.t.g.h.HelloWorldApplication          : No active profile set, falling back to 1 default profile: "default"
+hello-world  | 2025-02-27T21:35:30.084Z  INFO 1 --- [           main] o.s.g.c.a.ClusterAwareConfiguration      : Failed to connect to localhost[40404]
+hello-world  | 2025-02-27T21:35:30.087Z  INFO 1 --- [           main] o.s.g.c.a.ClusterAwareConfiguration      : Failed to connect to localhost[10334]
+hello-world  | 2025-02-27T21:35:30.090Z  INFO 1 --- [           main] o.s.g.c.a.ClusterAwareConfiguration      : Successfully connected to gemfire-locator-0[10334]
+hello-world  | 2025-02-27T21:35:30.091Z  INFO 1 --- [           main] o.s.g.c.a.ClusterAwareConfiguration      : Cluster was found; Auto-configuration made [1] successful connection(s)
+hello-world  | 2025-02-27T21:35:30.091Z  INFO 1 --- [           main] o.s.g.c.a.ClusterAwareConfiguration      : Spring Boot application is running in a client/server topology using a standalone Apache Geode-based cluster
+hello-world  | 2025-02-27T21:35:30.191Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Gemfire repositories in DEFAULT mode.
+hello-world  | 2025-02-27T21:35:30.213Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Gemfire repository interfaces.
+hello-world  | 2025-02-27T21:35:31.196Z  INFO 1 --- [           main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method PdxConfiguration.pdxDiskStoreAwareBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+hello-world  | 2025-02-27T21:35:31.199Z  INFO 1 --- [           main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method RegionTemplateAutoConfiguration.regionTemplateBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+hello-world  | 2025-02-27T21:35:31.395Z  WARN 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.gemfire.config.annotation.CachingDefinedRegionsConfiguration' of type [org.springframework.data.gemfire.config.annotation.CachingDefinedRegionsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [cachingAnnotationsRegionBeanRegistrar] is declared through a non-static factory method on that class; consider declaring it as static instead.
+hello-world  | 2025-02-27T21:35:31.468Z  WARN 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.gemfire.config.annotation.ContinuousQueryConfiguration' of type [org.springframework.data.gemfire.config.annotation.ContinuousQueryConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [continuousQueryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+hello-world  | 2025-02-27T21:35:31.482Z  WARN 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.geode.boot.autoconfigure.DataImportExportAutoConfiguration' of type [org.springframework.geode.boot.autoconfigure.DataImportExportAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jsonCacheDataImporterExporter] is declared through a non-static factory method on that class; consider declaring it as static instead.
+hello-world  | 2025-02-27T21:35:31.936Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+hello-world  | 2025-02-27T21:35:31.960Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+hello-world  | 2025-02-27T21:35:31.960Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+hello-world  | 2025-02-27T21:35:32.062Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+hello-world  | 2025-02-27T21:35:32.066Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2879 ms
+hello-world  | 2025-02-27T21:35:32.972Z  INFO 1 --- [           main] o.a.g.l.internal.LoggingProviderLoader   : Using org.apache.geode.logging.internal.SimpleLoggingProvider for service org.apache.geode.logging.internal.spi.LoggingProvider
+hello-world  | 2025-02-27T21:35:33.132Z  INFO 1 --- [           main] o.a.g.logging.internal.LoggingSession    : 
+hello-world  | ---------------------------------------------------------------------------
+hello-world  |   Licensed to the Apache Software Foundation (ASF) under one or more
+hello-world  |   contributor license agreements.  See the NOTICE file distributed with this
+hello-world  |   work for additional information regarding copyright ownership.
+hello-world  |    
+hello-world  |   The ASF licenses this file to You under the Apache License, Version 2.0
+hello-world  |   (the "License"); you may not use this file except in compliance with the
+hello-world  |   License.  You may obtain a copy of the License at
+hello-world  |   
+hello-world  |   http://www.apache.org/licenses/LICENSE-2.0
+hello-world  |   
+hello-world  |   Unless required by applicable law or agreed to in writing, software
+hello-world  |   distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+hello-world  |   WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+hello-world  |   License for the specific language governing permissions and limitations
+hello-world  |   under the License.
+hello-world  |   
+hello-world  | ---------------------------------------------------------------------------
+hello-world  | ----------------------------------------
+hello-world  | VMware GemFire
+hello-world  | ----------------------------------------
+hello-world  | Build-Java-Vendor: BellSoft
+hello-world  | GemFire-Source-Date: 2024-01-30 23:20:09 -0800
+hello-world  | Build-Platform: Linux 5.15.120+ amd64
+hello-world  | Build-Java-Version: 1.8.0_402
+hello-world  | GemFire-Source-Revision: 6bcbf92dbb17de9edefe96fdf4efa9106e7f5be2
+hello-world  | Build-Id: null 1658
+hello-world  | Product-Name: VMware GemFire
+hello-world  | GemFire-Version: 10.1.0
+hello-world  | GemFire-Source-Repository: support/10.1
+hello-world  | 
+hello-world  | Running on: Running on: 3bc5d465e879/172.28.0.7, 16 cpu(s), amd64 Linux 6.6.12-linuxkit 
+hello-world  | ---------------------------------------------------------------------------
+hello-world  | Communications version: 210
+hello-world  | Process ID: 1
+hello-world  | User: cnb
+hello-world  | Current dir: /workspace
+hello-world  | Home dir: /home/cnb
+hello-world  | Command Line Parameters:
+hello-world  |   -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties
+hello-world  |   -XX:+ExitOnOutOfMemoryError
+hello-world  |   -XX:MaxDirectMemorySize=10M
+hello-world  |   -Xmx1584288K
+hello-world  |   -XX:MaxMetaspaceSize=157255K
+hello-world  |   -XX:ReservedCodeCacheSize=240M
+hello-world  |   -Xss1M
+hello-world  |   -XX:+UnlockDiagnosticVMOptions
+hello-world  |   -XX:NativeMemoryTracking=summary
+hello-world  |   -XX:+PrintNMTStatistics
+hello-world  |   -Dorg.springframework.cloud.bindings.boot.enable=true
+hello-world  | Class Path:
+hello-world  |   /workspace
+hello-world  | Library Path:
+hello-world  |   /layers/paketo-buildpacks_bellsoft-liberica/jre/lib
+hello-world  |   /usr/java/packages/lib
+hello-world  |   /usr/lib64
+hello-world  |   /lib64
+hello-world  |   /lib
+hello-world  |   /usr/lib
+hello-world  | System Properties:
+hello-world  |     CONSOLE_LOG_CHARSET = US-ASCII
+hello-world  |     FILE_LOG_CHARSET = US-ASCII
+hello-world  |     PID = 1
+hello-world  |     catalina.base = /tmp/tomcat.8080.13757067865663243173
+hello-world  |     catalina.home = /tmp/tomcat.8080.13757067865663243173
+hello-world  |     catalina.useNaming = false
+hello-world  |     file.encoding = ANSI_X3.4-1968
+hello-world  |     file.separator = /
+hello-world  |     java.awt.headless = true
+hello-world  |     java.class.version = 61.0
+hello-world  |     java.home = /layers/paketo-buildpacks_bellsoft-liberica/jre
+hello-world  |     java.io.tmpdir = /tmp
+hello-world  |     java.runtime.name = OpenJDK Runtime Environment
+hello-world  |     java.runtime.version = 17.0.14+10-LTS
+hello-world  |     java.security.properties = /layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties
+hello-world  |     java.specification.maintenance.version = 1
+hello-world  |     java.specification.name = Java Platform API Specification
+hello-world  |     java.specification.vendor = Oracle Corporation
+hello-world  |     java.specification.version = 17
+hello-world  |     java.vendor = BellSoft
+hello-world  |     java.vendor.url = https://bell-sw.com/
+hello-world  |     java.vendor.url.bug = https://bell-sw.com/support
+hello-world  |     java.version = 17.0.14
+hello-world  |     java.version.date = 2025-01-21
+hello-world  |     java.vm.compressedOopsMode = 32-bit
+hello-world  |     java.vm.info = mixed mode, sharing
+hello-world  |     java.vm.name = OpenJDK 64-Bit Server VM
+hello-world  |     java.vm.specification.name = Java Virtual Machine Specification
+hello-world  |     java.vm.specification.vendor = Oracle Corporation
+hello-world  |     java.vm.specification.version = 17
+hello-world  |     java.vm.vendor = BellSoft
+hello-world  |     java.vm.version = 17.0.14+10-LTS
+hello-world  |     jdk.debug = release
+hello-world  |     line.separator = 
+hello-world  | 
+hello-world  |     native.encoding = ANSI_X3.4-1968
+hello-world  |     org.springframework.cloud.bindings.boot.enable = true
+hello-world  |     os.version = 6.6.12-linuxkit
+hello-world  |     path.separator = :
+hello-world  |     sun.arch.data.model = 64
+hello-world  |     sun.boot.library.path = /layers/paketo-buildpacks_bellsoft-liberica/jre/lib
+hello-world  |     sun.cpu.endian = little
+hello-world  |     sun.io.unicode.encoding = UnicodeLittle
+hello-world  |     sun.java.command = org.springframework.boot.loader.launch.JarLauncher
+hello-world  |     sun.java.launcher = SUN_STANDARD
+hello-world  |     sun.jnu.encoding = ANSI_X3.4-1968
+hello-world  |     sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+hello-world  |     sun.nio.ch.bugLevel = 
+hello-world  |     user.country = US
+hello-world  |     user.language = en
+hello-world  |     user.timezone = GMT
+hello-world  | Log4J 2 Configuration:
+hello-world  |     org.apache.geode.logging.internal.SimpleLoggingProvider
+hello-world  | ---------------------------------------------------------------------------
+hello-world  | 
+hello-world  | 2025-02-27T21:35:33.141Z  INFO 1 --- [           main] o.a.g.logging.internal.LoggingSession    : Startup Configuration: 
+hello-world  | ### GemFire Properties defined with api ###
+hello-world  | locators=
+hello-world  | log-level=error
+hello-world  | mcast-port=0
+hello-world  | name=GemFireSpringClient
+hello-world  | ### GemFire Properties using default values ###
+hello-world  | ack-severe-alert-threshold=0
+hello-world  | ack-wait-threshold=15
+hello-world  | archive-disk-space-limit=0
+hello-world  | archive-file-size-limit=0
+hello-world  | async-distribution-timeout=0
+hello-world  | async-max-queue-size=8
+hello-world  | async-queue-timeout=60000
+hello-world  | bind-address=
+hello-world  | cache-xml-file=cache.xml
+hello-world  | cluster-configuration-dir=
+hello-world  | cluster-ssl-ciphers=any
+hello-world  | cluster-ssl-enabled=false
+hello-world  | cluster-ssl-keystore=
+hello-world  | cluster-ssl-keystore-password=
+hello-world  | cluster-ssl-keystore-type=
+hello-world  | cluster-ssl-protocols=any
+hello-world  | cluster-ssl-require-authentication=true
+hello-world  | cluster-ssl-truststore=
+hello-world  | cluster-ssl-truststore-password=
+hello-world  | conflate-events=server
+hello-world  | conserve-sockets=false
+hello-world  | delta-propagation=true
+hello-world  | deploy-working-dir=/workspace
+hello-world  | disable-auto-reconnect=false
+hello-world  | disable-jmx=false
+hello-world  | disable-tcp=false
+hello-world  | distributed-system-id=-1
+hello-world  | distributed-transactions=false
+hello-world  | durable-client-id=
+hello-world  | durable-client-timeout=300
+hello-world  | enable-cluster-configuration=true
+hello-world  | enable-management-rest-service=true
+hello-world  | enable-network-partition-detection=true
+hello-world  | enable-time-statistics=true
+hello-world  | enforce-unique-host=false
+hello-world  | gateway-ssl-ciphers=any
+hello-world  | gateway-ssl-enabled=false
+hello-world  | gateway-ssl-keystore=
+hello-world  | gateway-ssl-keystore-password=
+hello-world  | gateway-ssl-keystore-type=
+hello-world  | gateway-ssl-protocols=any
+hello-world  | gateway-ssl-require-authentication=true
+hello-world  | gateway-ssl-truststore=
+hello-world  | gateway-ssl-truststore-password=
+hello-world  | groups=
+hello-world  | http-service-bind-address=
+hello-world  | http-service-port=7070
+hello-world  | http-service-ssl-ciphers=any
+hello-world  | http-service-ssl-enabled=false
+hello-world  | http-service-ssl-keystore=
+hello-world  | http-service-ssl-keystore-password=
+hello-world  | http-service-ssl-keystore-type=
+hello-world  | http-service-ssl-protocols=any
+hello-world  | http-service-ssl-require-authentication=false
+hello-world  | http-service-ssl-truststore=
+hello-world  | http-service-ssl-truststore-password=
+hello-world  | jmx-manager=false
+hello-world  | jmx-manager-access-file=
+hello-world  | jmx-manager-bind-address=
+hello-world  | jmx-manager-hostname-for-clients=
+hello-world  | jmx-manager-http-port=7070
+hello-world  | jmx-manager-password-file=
+hello-world  | jmx-manager-port=1099
+hello-world  | jmx-manager-ssl-ciphers=any
+hello-world  | jmx-manager-ssl-enabled=false
+hello-world  | jmx-manager-ssl-keystore=
+hello-world  | jmx-manager-ssl-keystore-password=
+hello-world  | jmx-manager-ssl-keystore-type=
+hello-world  | jmx-manager-ssl-protocols=any
+hello-world  | jmx-manager-ssl-require-authentication=true
+hello-world  | jmx-manager-ssl-truststore=
+hello-world  | jmx-manager-ssl-truststore-password=
+hello-world  | jmx-manager-start=false
+hello-world  | jmx-manager-update-rate=2000
+hello-world  | load-cluster-configuration-from-dir=false
+hello-world  | locator-wait-time=0
+hello-world  | lock-memory=false
+hello-world  | log-disk-space-limit=0
+hello-world  | log-file=
+hello-world  | log-file-size-limit=0
+hello-world  | max-num-reconnect-tries=3
+hello-world  | max-wait-time-reconnect=60000
+hello-world  | mcast-address=239.192.81.1
+hello-world  | mcast-flow-control=1048576, 0.25, 5000
+hello-world  | mcast-recv-buffer-size=1048576
+hello-world  | mcast-send-buffer-size=65535
+hello-world  | mcast-ttl=32
+hello-world  | member-timeout=5000
+hello-world  | membership-port-range=41000-61000
+hello-world  | memcached-bind-address=
+hello-world  | memcached-port=0
+hello-world  | memcached-protocol=ASCII
+hello-world  | off-heap-memory-size=
+hello-world  | redundancy-zone=
+hello-world  | remote-locators=
+hello-world  | remove-unresponsive-client=false
+hello-world  | roles=
+hello-world  | security-auth-token-enabled-components=
+hello-world  | security-client-accessor=
+hello-world  | security-client-accessor-pp=
+hello-world  | security-client-auth-init=
+hello-world  | security-client-authenticator=
+hello-world  | security-client-dhalgo=
+hello-world  | security-log-file=
+hello-world  | security-log-level=config
+hello-world  | security-manager=
+hello-world  | security-peer-auth-init=
+hello-world  | security-peer-authenticator=
+hello-world  | security-peer-verifymember-timeout=1000
+hello-world  | security-post-processor=
+hello-world  | security-udp-dhalgo=
+hello-world  | serializable-object-filter=!*
+hello-world  | server-bind-address=
+hello-world  | server-ssl-ciphers=any
+hello-world  | server-ssl-enabled=false
+hello-world  | server-ssl-keystore=
+hello-world  | server-ssl-keystore-password=
+hello-world  | server-ssl-keystore-type=
+hello-world  | server-ssl-protocols=any
+hello-world  | server-ssl-require-authentication=true
+hello-world  | server-ssl-truststore=
+hello-world  | server-ssl-truststore-password=
+hello-world  | socket-buffer-size=32768
+hello-world  | socket-lease-time=1800000
+hello-world  | ssl-ciphers=any
+hello-world  | ssl-client-protocols=
+hello-world  | ssl-cluster-alias=
+hello-world  | ssl-default-alias=
+hello-world  | ssl-enabled-components=
+hello-world  | ssl-endpoint-identification-enabled=false
+hello-world  | ssl-gateway-alias=
+hello-world  | ssl-jmx-alias=
+hello-world  | ssl-keystore=
+hello-world  | ssl-keystore-password=
+hello-world  | ssl-keystore-type=
+hello-world  | ssl-locator-alias=
+hello-world  | ssl-parameter-extension=
+hello-world  | ssl-protocols=any
+hello-world  | ssl-require-authentication=true
+hello-world  | ssl-server-alias=
+hello-world  | ssl-server-protocols=
+hello-world  | ssl-truststore=
+hello-world  | ssl-truststore-password=
+hello-world  | ssl-truststore-type=
+hello-world  | ssl-use-default-context=false
+hello-world  | ssl-web-alias=
+hello-world  | ssl-web-require-authentication=false
+hello-world  | start-dev-rest-api=false
+hello-world  | start-locator=
+hello-world  | statistic-archive-file=
+hello-world  | statistic-sample-rate=1000
+hello-world  | statistic-sampling-enabled=true
+hello-world  | tcp-port=0
+hello-world  | thread-monitor-enabled=true
+hello-world  | thread-monitor-interval-ms=60000
+hello-world  | thread-monitor-time-limit-ms=120000
+hello-world  | udp-fragment-size=60000
+hello-world  | udp-recv-buffer-size=1048576
+hello-world  | udp-send-buffer-size=65535
+hello-world  | use-cluster-configuration=true
+hello-world  | use-udp-membership-messenger=false
+hello-world  | user-command-packages=
+hello-world  | validate-serializable-objects=false
+hello-world  | 
+hello-world  | 2025-02-27T21:35:33.143Z  INFO 1 --- [           main] o.a.g.logging.internal.LoggingSession    : ClassLoader Modules:
+hello-world  | No modules found
+hello-world  | 2025-02-27T21:35:33.149Z  INFO 1 --- [           main] o.a.g.internal.InternalDataSerializer    : initializing InternalDataSerializer with 4 services
+hello-world  | 2025-02-27T21:35:33.170Z  INFO 1 --- [           main] o.a.g.i.s.f.SanctionedSerializables      : loaded 462 sanctioned serializables from CoreSanctionedSerializablesService
+hello-world  | 2025-02-27T21:35:33.171Z  INFO 1 --- [           main] o.a.g.i.s.f.SanctionedSerializables      : loaded 0 sanctioned serializables from MembershipSanctionedSerializablesService
+hello-world  | 2025-02-27T21:35:33.174Z  INFO 1 --- [           main] o.a.g.i.s.f.SanctionedSerializables      : loaded 6 sanctioned serializables from SerializationSanctionedSerializablesService
+hello-world  | 2025-02-27T21:35:33.176Z  INFO 1 --- [           main] o.a.g.i.s.f.SanctionedSerializables      : loaded 43 sanctioned serializables from ManagementSanctionedSerializablesService
+hello-world  | 2025-02-27T21:35:33.220Z  INFO 1 --- [           main] org.apache.geode                         : [ThreadsMonitor] New Monitor object and process were created.
+hello-world  | 
+hello-world  | 2025-02-27T21:35:33.288Z  INFO 1 --- [    StatSampler] o.a.g.i.statistics.StatArchiveHandler    : Disabling statistic archival.
+hello-world  | 2025-02-27T21:35:33.436Z  INFO 1 --- [           main] o.a.g.internal.cache.GemFireCacheImpl    : Running in client mode
+hello-world  | 2025-02-27T21:35:33.539Z  INFO 1 --- [           main] o.a.g.internal.cache.GemFireCacheImpl    : Initialized cache service org.apache.geode.cache.query.internal.QueryConfigurationServiceImpl
+hello-world  | 2025-02-27T21:35:33.557Z  INFO 1 --- [           main] o.s.d.g.client.ClientCacheFactoryBean    : Created new VMware GemFire version [10.1.0] Cache [GemFireSpringClient]
+hello-world  | 2025-02-27T21:35:33.559Z  INFO 1 --- [           main] o.s.d.g.client.ClientCacheFactoryBean    : Connected to Distributed System [GemFireSpringClient] as Member [3bc5d465e879(GemFireSpringClient:1:loner):0:57155649:GemFireSpringClient] in Group(s) [[]] with Role(s) [[]] on Host [3bc5d465e879] having PID [1]
+hello-world  | 2025-02-27T21:35:33.570Z  INFO 1 --- [           main] o.s.d.g.client.ClientRegionFactoryBean   : Creating Region [Region1] in Cache [GemFireSpringClient]
+hello-world  | 2025-02-27T21:35:33.657Z  INFO 1 --- [           main] o.a.g.c.c.i.AutoConnectionSourceImpl     : AutoConnectionSource UpdateLocatorListTask started with interval=10000 ms.
+hello-world  | 2025-02-27T21:35:33.667Z  INFO 1 --- [r-gemfirePool-2] o.a.g.c.c.i.AutoConnectionSourceImpl     : online locators was 0 and is now 1
+hello-world  | 2025-02-27T21:35:33.672Z  INFO 1 --- [           main] org.apache.geode                         : Updating membership port.  Port changed from 0 to 55340.  ID is now 3bc5d465e879(GemFireSpringClient:1:loner):0:57155649:GemFireSpringClient
+hello-world  | 2025-02-27T21:35:33.720Z  INFO 1 --- [           main] o.a.g.cache.client.internal.PoolImpl     : Pool gemfirePool started with multiuser-authentication=false
+hello-world  | 2025-02-27T21:35:33.726Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-27T21:35:33.732Z  INFO 1 --- [           main] o.s.d.g.client.ClientRegionFactoryBean   : Creating client Region [Region1]
+hello-world  | 2025-02-27T21:35:34.738Z  WARN 1 --- [           main] Exporter$ClassPathImportResourceResolver : Resource [class path resource [data-region1.json]] at location [classpath:data-region1.json] does not exist; skipping import
+hello-world  | 2025-02-27T21:35:34.738Z  WARN 1 --- [           main] Exporter$ClassPathImportResourceResolver : Resource [classpath:data-region1.json] for Region [/Region1] could not be found; skipping import for Region
+hello-world  | 2025-02-27T21:35:34.768Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+hello-world  | 2025-02-27T21:35:34.806Z  INFO 1 --- [           main] c.v.t.g.h.HelloWorldApplication          : Started HelloWorldApplication in 6.57 seconds (process running for 7.251)
+hello-world  | 2025-02-27T22:43:06.122Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1796887 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-27T22:43:05.898Z  INFO 1 --- [-gemfirePool-27] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-27T22:43:05.970Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-27T22:43:05.993Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-27T22:43:06.027Z  WARN 1 --- [-gemfirePool-27] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-27T22:43:06.426Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-27T23:21:05.080Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1483954 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-27T23:21:05.411Z  INFO 1 --- [-gemfirePool-92] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-27T23:21:05.420Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-27T23:21:05.416Z  WARN 1 --- [-gemfirePool-92] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-27T23:21:05.423Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-27T23:21:05.639Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-27T23:39:28.113Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1052953 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-27T23:39:28.138Z  INFO 1 --- [-gemfirePool-98] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-27T23:39:28.138Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-27T23:39:28.140Z  WARN 1 --- [-gemfirePool-98] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-27T23:39:28.141Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-27T23:39:28.826Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-27T23:55:50.115Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 921960 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T00:45:31.192Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1796522 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T00:45:31.195Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T00:45:31.211Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T00:45:31.223Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T00:45:31.751Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T01:08:43.180Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 738647 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T01:08:43.524Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T01:08:43.525Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T01:08:43.530Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T01:08:43.577Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T01:26:51.183Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1036960 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T01:26:51.835Z  INFO 1 --- [gemfirePool-184] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T01:26:51.837Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T01:26:51.849Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T01:26:51.850Z  WARN 1 --- [gemfirePool-184] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T01:26:51.912Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T01:45:02.172Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1040018 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T01:45:02.494Z  INFO 1 --- [gemfirePool-186] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T01:45:02.497Z  WARN 1 --- [gemfirePool-186] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T01:45:02.498Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T01:45:02.498Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T01:45:02.621Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T02:02:34.160Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1000964 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T02:02:34.471Z  INFO 1 --- [gemfirePool-201] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T02:02:34.476Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T02:02:34.477Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T02:02:34.478Z  WARN 1 --- [gemfirePool-201] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T02:02:34.553Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T02:09:45.220Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 374686 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T02:09:45.236Z  INFO 1 --- [gemfirePool-212] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T02:09:45.247Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T02:09:45.247Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T02:09:45.249Z  WARN 1 --- [gemfirePool-212] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T02:09:45.356Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T03:02:12.232Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1797267 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T03:02:12.582Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T03:02:12.586Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T03:02:12.593Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T03:02:12.801Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T03:23:44.135Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 917779 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T03:23:44.181Z  INFO 1 --- [gemfirePool-267] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T03:23:44.183Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T03:23:44.190Z  WARN 1 --- [gemfirePool-267] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T03:23:44.190Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T03:23:44.614Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T03:39:33.193Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 897991 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T03:39:33.295Z  INFO 1 --- [gemfirePool-278] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T03:39:33.297Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T03:39:33.300Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T03:39:33.303Z  WARN 1 --- [gemfirePool-278] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T03:39:33.377Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T03:57:49.249Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1022998 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T03:57:49.254Z  INFO 1 --- [gemfirePool-290] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T03:57:49.264Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T03:57:49.275Z  WARN 1 --- [gemfirePool-290] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T03:57:49.287Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T03:57:49.484Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T04:21:10.188Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1040865 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T04:21:10.223Z  INFO 1 --- [gemfirePool-308] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T04:21:10.227Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T04:21:10.232Z  WARN 1 --- [gemfirePool-308] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T04:21:10.228Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T04:21:10.325Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T04:54:33.205Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 964429 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T04:54:33.555Z  INFO 1 --- [gemfirePool-350] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T04:54:33.556Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T04:54:33.556Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T04:54:33.557Z  WARN 1 --- [gemfirePool-350] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T04:54:33.682Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T05:56:40.323Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1797204 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T05:56:40.353Z  INFO 1 --- [gemfirePool-417] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T05:56:40.385Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T05:56:40.385Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T05:56:40.386Z  WARN 1 --- [gemfirePool-417] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T05:56:40.743Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T07:10:22.311Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1796734 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T07:10:22.623Z  INFO 1 --- [gemfirePool-500] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T07:10:22.674Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T07:10:22.674Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T07:10:22.678Z  WARN 1 --- [gemfirePool-500] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T07:10:22.843Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T07:28:32.288Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1022961 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T07:28:32.294Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T07:28:32.295Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T07:28:32.297Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T07:28:32.395Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T07:34:07.289Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 266967 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T07:34:07.341Z  INFO 1 --- [gemfirePool-529] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T07:34:07.348Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T07:34:07.356Z  WARN 1 --- [gemfirePool-529] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T07:34:07.355Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T07:34:07.435Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T07:51:12.286Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 973964 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T07:51:12.322Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T07:51:12.323Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T07:51:12.322Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T07:51:12.653Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T08:09:02.305Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1019983 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T08:09:02.326Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T08:09:02.343Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T08:09:02.343Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T08:09:02.611Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T08:26:17.364Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 983969 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T08:26:17.718Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T08:26:17.718Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T08:26:17.722Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T08:26:17.913Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T08:44:33.280Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1039950 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T08:44:33.365Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T08:44:33.366Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T08:44:33.369Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T08:44:33.461Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T09:02:07.318Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 947927 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T09:02:07.361Z  INFO 1 --- [gemfirePool-599] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T09:02:07.388Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T09:02:07.388Z  WARN 1 --- [gemfirePool-599] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T09:02:07.388Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T09:02:07.499Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T09:19:48.381Z  INFO 1 --- [gemfirePool-612] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T09:19:48.389Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1003982 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T09:19:48.408Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T09:19:48.409Z  WARN 1 --- [gemfirePool-612] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T09:19:48.409Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T09:19:48.488Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T09:37:51.365Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1032952 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T09:56:44.337Z  INFO 1 --- [gemfirePool-643] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T09:56:44.345Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T09:56:44.346Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T09:56:44.367Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1066949 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T09:56:44.370Z  WARN 1 --- [gemfirePool-643] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T09:56:44.579Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T10:13:50.405Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 975010 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T10:31:21.336Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 999919 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T10:31:21.664Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T10:31:21.665Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T10:31:21.665Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T10:31:21.716Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T10:48:59.346Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1006982 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T10:48:59.354Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T10:48:59.380Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T10:48:59.383Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T10:48:59.472Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T11:05:34.365Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 926974 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T11:05:34.422Z  INFO 1 --- [gemfirePool-697] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T11:05:34.424Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T11:05:34.426Z  WARN 1 --- [gemfirePool-697] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T11:05:34.426Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T11:05:34.748Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T11:23:49.344Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1043912 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T11:35:01.399Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 623003 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T11:35:01.703Z  INFO 1 --- [gemfirePool-731] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T11:35:01.705Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T11:35:01.709Z  WARN 1 --- [gemfirePool-731] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T11:35:01.710Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T11:35:01.761Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T11:38:22.425Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 78949 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T11:38:22.514Z  INFO 1 --- [gemfirePool-745] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T11:38:22.514Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T11:38:22.515Z  WARN 1 --- [gemfirePool-745] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T11:38:22.515Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T11:38:22.871Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
+hello-world  | 2025-02-28T12:07:01.398Z  WARN 1 --- [    StatSampler] o.a.g.i.statistics.HostStatSampler       : Statistics sampling thread detected a wakeup delay of 1667914 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+hello-world  | 2025-02-28T12:07:01.715Z  INFO 1 --- [gemfirePool-756] o.a.g.c.c.internal.QueueManagerImpl      : Primary subscription endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) crashed. Scheduling recovery.
+hello-world  | 2025-02-28T12:07:01.717Z  WARN 1 --- [gemfirePool-756] o.a.g.c.client.internal.OpExecutorImpl   : Pool unexpected closed socket on server connection=SubscriptionConnectionImpl[163b776901bd:40405:closed]). Server unreachable: could not connect after 1 attempts
+hello-world  | 2025-02-28T12:07:01.717Z  INFO 1 --- [11]) port 40405] o.a.g.c.c.internal.QueueManagerImpl      : Cache client updater for Queue on endpoint 163b776901bd:40405,163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) exiting. Scheduling recovery.
+hello-world  | 2025-02-28T12:07:01.717Z  INFO 1 --- [er-gemfirePool1] o.a.g.c.c.internal.QueueManagerImpl      : SubscriptionManager redundancy satisfier - primary endpoint has been lost. Attempting to recover.
+hello-world  | 2025-02-28T12:07:01.948Z  INFO 1 --- [11]) port 40405] o.a.g.i.c.t.sockets.CacheClientUpdater   : Cache Client Updater Thread  on 163b776901bd(server-0:1)<v1>:58845(version:UnknownVersion[ordinal=211]) port 40405 (163b776901bd:40405) : ready to process messages.
