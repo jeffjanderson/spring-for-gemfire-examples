@@ -7,5 +7,4 @@ out/
 gradlew.bat
 locator/
 server/
-build.gradle/
 gradle.properties/
